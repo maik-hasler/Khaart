@@ -17,6 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
 		Directory.Build.props = Directory.Build.props
 		Directory.Packages.props = Directory.Packages.props
 		LICENSE = LICENSE
@@ -25,11 +26,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernel", "SharedKernel", "{F0924D4C-98FF-4A30-A242-097F37473171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaart.SharedKernel.Domain", "src\SharedKernel\Khaart.SharedKernel.Domain\Khaart.SharedKernel.Domain.csproj", "{E0A0E313-8EBD-47F8-B1FE-6444F2E9FC73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.SharedKernel.Domain", "src\SharedKernel\Khaart.SharedKernel.Domain\Khaart.SharedKernel.Domain.csproj", "{E0A0E313-8EBD-47F8-B1FE-6444F2E9FC73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaart.SharedKernel.Application", "src\SharedKernel\Khaart.SharedKernel.Application\Khaart.SharedKernel.Application.csproj", "{B271C06E-1545-4834-86ED-0D472EE9C056}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.SharedKernel.Application", "src\SharedKernel\Khaart.SharedKernel.Application\Khaart.SharedKernel.Application.csproj", "{B271C06E-1545-4834-86ED-0D472EE9C056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaart.SharedKernel.Infrastructure", "src\SharedKernel\Khaart.SharedKernel.Infrastructure\Khaart.SharedKernel.Infrastructure.csproj", "{EA8F13FD-732D-4648-A30B-F15F35401F89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.SharedKernel.Infrastructure", "src\SharedKernel\Khaart.SharedKernel.Infrastructure\Khaart.SharedKernel.Infrastructure.csproj", "{EA8F13FD-732D-4648-A30B-F15F35401F89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{F0814868-3437-4083-9676-5CA63411C6B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{F7A08B77-D3C1-48FC-B478-F29DC7307B74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.Modules.Identity.Domain", "src\Modules\Identity\Khaart.Modules.Identity.Domain\Khaart.Modules.Identity.Domain.csproj", "{D9E9D158-0497-450A-BF8C-65F78DA8A74E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.SharedKernel.Presentation", "src\SharedKernel\Khaart.SharedKernel.Presentation\Khaart.SharedKernel.Presentation.csproj", "{50743880-EF60-4AAC-9921-8D79D71FFA8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.Modules.Identity.Presentation", "src\Modules\Identity\Khaart.Modules.Identity.Presentation\Khaart.Modules.Identity.Presentation.csproj", "{6421AFCB-BE73-47B7-9DEF-D0D84BD79049}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.Modules.Identity.Infrastructure", "src\Modules\Identity\Khaart.Modules.Identity.Infrastructure\Khaart.Modules.Identity.Infrastructure.csproj", "{A5A47C9E-3CFC-41A8-8A12-841D7D27D500}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.Modules.Identity.IntegrationEvents", "src\Modules\Identity\Khaart.Modules.Identity.IntegrationEvents\Khaart.Modules.Identity.IntegrationEvents.csproj", "{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khaart.Modules.Identity.Application", "src\Modules\Identity\Khaart.Modules.Identity.Application\Khaart.Modules.Identity.Application.csproj", "{A162B1E4-B4B7-4063-8983-3418040920E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +74,30 @@ Global
 		{EA8F13FD-732D-4648-A30B-F15F35401F89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8F13FD-732D-4648-A30B-F15F35401F89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8F13FD-732D-4648-A30B-F15F35401F89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E9D158-0497-450A-BF8C-65F78DA8A74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E9D158-0497-450A-BF8C-65F78DA8A74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E9D158-0497-450A-BF8C-65F78DA8A74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E9D158-0497-450A-BF8C-65F78DA8A74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50743880-EF60-4AAC-9921-8D79D71FFA8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50743880-EF60-4AAC-9921-8D79D71FFA8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50743880-EF60-4AAC-9921-8D79D71FFA8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50743880-EF60-4AAC-9921-8D79D71FFA8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6421AFCB-BE73-47B7-9DEF-D0D84BD79049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6421AFCB-BE73-47B7-9DEF-D0D84BD79049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6421AFCB-BE73-47B7-9DEF-D0D84BD79049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6421AFCB-BE73-47B7-9DEF-D0D84BD79049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5A47C9E-3CFC-41A8-8A12-841D7D27D500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5A47C9E-3CFC-41A8-8A12-841D7D27D500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5A47C9E-3CFC-41A8-8A12-841D7D27D500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5A47C9E-3CFC-41A8-8A12-841D7D27D500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A162B1E4-B4B7-4063-8983-3418040920E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A162B1E4-B4B7-4063-8983-3418040920E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A162B1E4-B4B7-4063-8983-3418040920E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A162B1E4-B4B7-4063-8983-3418040920E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +110,14 @@ Global
 		{E0A0E313-8EBD-47F8-B1FE-6444F2E9FC73} = {F0924D4C-98FF-4A30-A242-097F37473171}
 		{B271C06E-1545-4834-86ED-0D472EE9C056} = {F0924D4C-98FF-4A30-A242-097F37473171}
 		{EA8F13FD-732D-4648-A30B-F15F35401F89} = {F0924D4C-98FF-4A30-A242-097F37473171}
+		{F0814868-3437-4083-9676-5CA63411C6B0} = {E9910AB2-5102-4A8B-A348-8981F7FCCAC6}
+		{F7A08B77-D3C1-48FC-B478-F29DC7307B74} = {F0814868-3437-4083-9676-5CA63411C6B0}
+		{D9E9D158-0497-450A-BF8C-65F78DA8A74E} = {F7A08B77-D3C1-48FC-B478-F29DC7307B74}
+		{50743880-EF60-4AAC-9921-8D79D71FFA8B} = {F0924D4C-98FF-4A30-A242-097F37473171}
+		{6421AFCB-BE73-47B7-9DEF-D0D84BD79049} = {F7A08B77-D3C1-48FC-B478-F29DC7307B74}
+		{A5A47C9E-3CFC-41A8-8A12-841D7D27D500} = {F7A08B77-D3C1-48FC-B478-F29DC7307B74}
+		{E6808948-EBC6-4D85-8CF0-BF9F2570FB3A} = {F7A08B77-D3C1-48FC-B478-F29DC7307B74}
+		{A162B1E4-B4B7-4063-8983-3418040920E5} = {F7A08B77-D3C1-48FC-B478-F29DC7307B74}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A213E1C4-C6E0-48CE-8BE6-BF7D58F981B2}
